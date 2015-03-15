@@ -4,20 +4,13 @@ body {
   height: 100%;
 }
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Helvetica, Arial, sans-serif;
-}
-.wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-}
-.chart {
-  margin: auto;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 svg {
   -webkit-animation: svg-animation 1.2s ease-in-out;
@@ -27,6 +20,9 @@ svg {
           transform: scale(1);
   -webkit-perspective: 500px;
           perspective: 500px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  overflow: visible;
+  margin: auto;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 path {
