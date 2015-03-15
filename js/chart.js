@@ -21,34 +21,21 @@ function ajaxRequest(url, callback) {
     xhr.onreadystatechange = ensureReadiness;
 
     function ensureReadiness() {
-        if(xhr.readyState < 4) {
-            return;
-        }
-
-        if(xhr.status !== 200) {
-            return;
-        }
-
-        // all is well
-        if(xhr.readyState === 4) {
-            callback(xhr);
-        }
+        if(xhr.readyState < 4) return;
+        if(xhr.status !== 200) return;
+        if(xhr.readyState === 4) callback(xhr);
     }
 
     xhr.open('GET', url, true);
     xhr.send('');
 }
 
-var urls = {
-    chartData: 'data/chartData.json'
-};
-
-
-
-
 var $svgContainer = document.querySelector('svg'),
     svg = {width: 900, height: 500},
     charts = [],
+    urls = {
+        chartData: 'data/chartData.json'
+    },
     balance = {
         min: 0,
         max: 0
