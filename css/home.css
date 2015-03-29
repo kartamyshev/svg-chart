@@ -24,6 +24,16 @@ svg {
   overflow: visible;
   margin: auto;
 }
+path {
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-animation: path-appearance 0.9s ease-out 1.05s forwards;
+          animation: path-appearance 0.9s ease-out 1.05s forwards;
+}
 path:nth-child(1) {
   -webkit-animation-delay: 0.076923076923077s;
           animation-delay: 0.076923076923077s;
@@ -164,20 +174,14 @@ path:nth-child(35) {
   -webkit-animation-delay: 2.692307692307693s;
           animation-delay: 2.692307692307693s;
 }
-path {
-  -webkit-transform-origin: 100% 100%;
-      -ms-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-  -webkit-transform: scaleY(0);
-      -ms-transform: scaleY(0);
-          transform: scaleY(0);
-  -webkit-animation: path-appearance 0.9s linear 1.05s forwards;
-          animation: path-appearance 0.9s linear 1.05s forwards;
-}
 @-webkit-keyframes path-appearance {
   from {
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
+  }
+  65% {
+    -webkit-transform: scaleY(1.04);
+            transform: scaleY(1.04);
   }
   to {
     -webkit-transform: scaleY(1);
@@ -188,6 +192,10 @@ path {
   from {
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
+  }
+  65% {
+    -webkit-transform: scaleY(1.04);
+            transform: scaleY(1.04);
   }
   to {
     -webkit-transform: scaleY(1);
