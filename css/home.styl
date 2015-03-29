@@ -4,7 +4,7 @@ body
   height 100%;
 
 body
-  display: flex
+  display flex
   margin 0;
   padding 0;
   font-family Helvetica, Arial, sans-serif;
@@ -15,11 +15,12 @@ svg
   perspective 500px
   box-shadow 0 0 5px rgba(0, 0, 0, .2)
   overflow visible
-  margin: auto
+  margin auto
 
 path
   transform-origin 100% 100%
   transform scaleY(0)
+  opacity 0
   animation path-appearance .7s ease-out forwards
 
 for i in (1..35)
@@ -29,10 +30,12 @@ for i in (1..35)
 @keyframes path-appearance
   from
     transform scaleY(0)
+    opacity 0
   65%
     transform scaleY(1.04)
   to
     transform scaleY(1)
+    opacity 1
 
 @keyframes svg-appearance
   from

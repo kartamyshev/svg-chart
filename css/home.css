@@ -31,6 +31,7 @@ path {
   -webkit-transform: scaleY(0);
       -ms-transform: scaleY(0);
           transform: scaleY(0);
+  opacity: 0;
   -webkit-animation: path-appearance 0.7s ease-out forwards;
           animation: path-appearance 0.7s ease-out forwards;
 }
@@ -178,6 +179,7 @@ path:nth-child(35) {
   from {
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
+    opacity: 0;
   }
   65% {
     -webkit-transform: scaleY(1.04);
@@ -186,12 +188,14 @@ path:nth-child(35) {
   to {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
+    opacity: 1;
   }
 }
 @keyframes path-appearance {
   from {
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
+    opacity: 0;
   }
   65% {
     -webkit-transform: scaleY(1.04);
@@ -200,6 +204,7 @@ path:nth-child(35) {
   to {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
+    opacity: 1;
   }
 }
 @-webkit-keyframes svg-appearance {
