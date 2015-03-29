@@ -20,7 +20,7 @@ svg
   animation svg-appearance 1.2s ease-in-out
   transform scale(1)
   perspective 500px
-  box-shadow 0 0 15px 10px rgba(0, 0, 0, .15)
+  box-shadow 0 0 15px 6px rgba(0, 0, 0, .15)
   overflow visible
   margin auto
 
@@ -47,7 +47,9 @@ for i in (1..35)
 @keyframes svg-appearance
   from
     transform scale(0)
+    opacity: 0
   65%
     transform scale(1.12)
+    opacity: 1
   to
     transform scale(1)

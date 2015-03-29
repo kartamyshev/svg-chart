@@ -24,7 +24,7 @@ svg {
           transform: scale(1);
   -webkit-perspective: 500px;
           perspective: 500px;
-  box-shadow: 0 0 15px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 0 15px 6px rgba(0,0,0,0.15);
   overflow: visible;
   margin: auto;
 }
@@ -215,10 +215,12 @@ path:nth-child(35) {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
+    opacity: 0;
   }
   65% {
     -webkit-transform: scale(1.12);
             transform: scale(1.12);
+    opacity: 1;
   }
   to {
     -webkit-transform: scale(1);
@@ -229,10 +231,12 @@ path:nth-child(35) {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
+    opacity: 0;
   }
   65% {
     -webkit-transform: scale(1.12);
             transform: scale(1.12);
+    opacity: 1;
   }
   to {
     -webkit-transform: scale(1);
