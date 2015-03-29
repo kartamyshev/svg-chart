@@ -67,7 +67,7 @@ ajaxRequest(urls.chartData, function(xhr) {
         var colors = {
                 positive: '',
                 negative: '',
-                neutral: 'rgba(0, 0, 0, .4)'
+                neutral: 'rgba(0, 0, 0, .45)'
             },
             x = 0,
             hue = 170,
