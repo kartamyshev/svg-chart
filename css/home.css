@@ -13,8 +13,8 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 svg {
-  -webkit-animation: svg-animation 1.2s ease-in-out;
-          animation: svg-animation 1.2s ease-in-out;
+  -webkit-animation: svg-appearance 1.2s ease-in-out;
+          animation: svg-appearance 1.2s ease-in-out;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -31,8 +31,8 @@ path {
   -webkit-transform: scaleY(0);
       -ms-transform: scaleY(0);
           transform: scaleY(0);
-  -webkit-animation: path-appearance 0.9s ease-out 1.05s forwards;
-          animation: path-appearance 0.9s ease-out 1.05s forwards;
+  -webkit-animation: path-appearance 0.7s ease-out forwards;
+          animation: path-appearance 0.7s ease-out forwards;
 }
 path:nth-child(1) {
   -webkit-animation-delay: 0.076923076923077s;
@@ -202,7 +202,7 @@ path:nth-child(35) {
             transform: scaleY(1);
   }
 }
-@-webkit-keyframes svg-animation {
+@-webkit-keyframes svg-appearance {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -216,7 +216,7 @@ path:nth-child(35) {
             transform: scale(1);
   }
 }
-@keyframes svg-animation {
+@keyframes svg-appearance {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -228,63 +228,5 @@ path:nth-child(35) {
   to {
     -webkit-transform: scale(1);
             transform: scale(1);
-  }
-}
-@-webkit-keyframes path-animation-3d {
-  from {
-    opacity: 0;
-    -webkit-transform: scaleX(0) rotate(20deg);
-            transform: scaleX(0) rotate(20deg);
-  }
-  80% {
-    opacity: 0.8;
-    -webkit-transform: scaleX(0.8) rotate(-3deg);
-            transform: scaleX(0.8) rotate(-3deg);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: scaleX(1) rotate(0deg);
-            transform: scaleX(1) rotate(0deg);
-  }
-}
-@keyframes path-animation-3d {
-  from {
-    opacity: 0;
-    -webkit-transform: scaleX(0) rotate(20deg);
-            transform: scaleX(0) rotate(20deg);
-  }
-  80% {
-    opacity: 0.8;
-    -webkit-transform: scaleX(0.8) rotate(-3deg);
-            transform: scaleX(0.8) rotate(-3deg);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: scaleX(1) rotate(0deg);
-            transform: scaleX(1) rotate(0deg);
-  }
-}
-@-webkit-keyframes path-animation-2d {
-  from {
-    opacity: 0;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-@keyframes path-animation-2d {
-  from {
-    opacity: 0;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
   }
 }

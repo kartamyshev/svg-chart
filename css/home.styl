@@ -9,11 +9,8 @@ body
   padding 0;
   font-family Helvetica, Arial, sans-serif;
 
-perspective = false
-duration = 1.2s
-
 svg
-  animation svg-animation duration ease-in-out
+  animation svg-appearance 1.2s ease-in-out
   transform scale(1)
   perspective 500px
   box-shadow 0 0 5px rgba(0, 0, 0, .2)
@@ -21,12 +18,9 @@ svg
   margin: auto
 
 path
-  local-duration = .9s
-  delay = 1.05s
-  mode = perspective ? ease-out : linear
   transform-origin 100% 100%
   transform scaleY(0)
-  animation path-appearance local-duration ease-out delay forwards
+  animation path-appearance .7s ease-out forwards
 
 for i in (1..35)
   path:nth-child({i})
@@ -40,30 +34,10 @@ for i in (1..35)
   to
     transform scaleY(1)
 
-@keyframes svg-animation
+@keyframes svg-appearance
   from
     transform scale(0)
   65%
     transform scale(1.12)
   to
     transform scale(1)
-
-
-@keyframes path-animation-3d
-  from
-    opacity 0
-    transform scaleX(0) rotate(20deg)
-  80%
-    opacity: .8
-    transform scaleX(0.8) rotate(-3deg)
-  to
-    opacity 1
-    transform scaleX(1) rotate(0deg)
-
-@keyframes path-animation-2d
-  from
-    opacity 0
-    transform scaleX(0)
-  to
-    opacity 1
-    transform scaleX(1)
