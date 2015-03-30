@@ -31,7 +31,7 @@ function ajaxRequest(url, callback) {
 }
 
 var $svgContainer = document.querySelector('svg'),
-    svg = {width: 900, height: 500},
+    svg = {width: 950, height: 500},
     charts = [],
     urls = {
         chartData: 'data/chartData.json'
@@ -67,11 +67,11 @@ ajaxRequest(urls.chartData, function(xhr) {
         var colors = {
                 positive: '',
                 negative: '',
-                neutral: 'rgba(0, 0, 0, .45)'
+                neutral: 'rgba(0, 0, 0, .35)'
             },
             x = 0,
             hue = 170,
-            tone = 60,
+            tone = 40,
             startFrom = 0,
             currentState = 0;
 

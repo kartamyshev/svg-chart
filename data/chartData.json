@@ -1,5 +1,4 @@
-[
-  {"cashBalance": 100, "points": {"currentState": 120, "duration": 40}},
+[{"cashBalance": 100, "points": {"currentState": 120, "duration": 40}},
   {"cashBalance": 350, "points": {"currentState": 240, "duration": 60}},
   {"cashBalance": -340, "points": {"currentState": 200, "duration": 90}},
   {"cashBalance": 0, "points": {"currentState": 220, "duration": 40}},
@@ -33,5 +32,5 @@
   {"cashBalance": 0, "points": {"currentState": 210, "duration": 130}},
   {"cashBalance": 130, "points": {"currentState": 300, "duration": 20}},
   {"cashBalance": -300, "points": {"currentState": 310, "duration": 25}},
-  {"cashBalance": 0, "points": {"currentState": 4, "duration": 60}}
-]
+  {"cashBalance": -1300, "points": {"currentState": 450, "duration": 125}},
+  {"cashBalance": 0, "points": {"currentState": 239, "duration": 60}}]
