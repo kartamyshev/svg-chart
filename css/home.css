@@ -4,7 +4,6 @@ body {
   height: 100%;
 }
 body {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +11,7 @@ body {
           animation: body-animation 1s linear;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   background-color: rgba(0,0,0,0.24);
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -19,7 +19,6 @@ svg {
   -webkit-animation: svg-appearance 1.2s ease-in-out;
           animation: svg-appearance 1.2s ease-in-out;
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1);
   -webkit-perspective: 500px;
           perspective: 500px;
@@ -28,13 +27,18 @@ svg {
   padding: 1px 3px;
   background: rgba(255,255,255,0.85);
   margin: auto;
+  cursor: pointer;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+}
+svg:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 path {
   -webkit-transform-origin: 100% 100%;
-      -ms-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
   -webkit-transform: scaleY(0);
-      -ms-transform: scaleY(0);
           transform: scaleY(0);
   opacity: 0;
   -webkit-animation: path-appearance 0.7s ease-out forwards;

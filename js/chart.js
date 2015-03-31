@@ -31,7 +31,7 @@ function ajaxRequest(url, callback) {
 }
 
 var $svgContainer = document.querySelector('svg'),
-    svg = {width: 950, height: 500},
+    svg = {width: 900, height: 500},
     charts = [],
     urls = {
         chartData: 'data/chartData.json'

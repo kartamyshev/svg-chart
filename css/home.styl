@@ -9,6 +9,7 @@ body
   animation body-animation 1s linear
   margin 0;
   padding 0;
+  overflow: hidden
   background-color: rgba(0, 0, 0, .24);
   font-family Helvetica, Arial, sans-serif;
 
@@ -21,6 +22,10 @@ svg
   padding: 1px 3px
   background: rgba(255, 255, 255, .85)
   margin auto
+  cursor: pointer
+  transition transform .4s linear
+  &:hover
+    transform scale(1.01)
 
 path
   transform-origin 100% 100%
