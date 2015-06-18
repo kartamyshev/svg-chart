@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Svg chart</title>
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+<svg>
+    <defs>
+        <linearGradient id="clicks" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="green" stop-opacity="0.4" />
+            <stop offset="100%" stop-color="green" stop-opacity="0.1" />
+        </linearGradient>
+        <linearGradient id="spent-money" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#8B1510" stop-opacity="0.4" />
+            <stop offset="100%" stop-color="#8B1510" stop-opacity="0.1" />
+        </linearGradient>
+    </defs>
+    <path class="clicks" fill="none" stroke="green" stroke-width="3" />
+    <path class="money" fill="url(#spent-money)" />
+    <g class="click-circles" />
+    <g class="money-circles" />
+</svg>
+
+<script src="js/home-out.js"></script>
+</body>
+</html>
